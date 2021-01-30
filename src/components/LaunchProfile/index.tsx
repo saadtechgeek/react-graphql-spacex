@@ -11,7 +11,7 @@ const LaunchProfileContainer = ({ id }: OwnProps) => {
 
   React.useEffect(() => {
     refetch();
-  }, [id]);
+  }, [id,refetch]);
 
   if (loading) {
     return <div>Loading...</div>;
